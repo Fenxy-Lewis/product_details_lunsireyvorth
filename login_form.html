@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+            text-decoration: none;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #111b28;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            width: 450px;
+            border-radius: 25px;
+            padding: 30px 30px;
+        }
+
+        .login_container img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .login_container h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .login_container p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input_block label {
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .input_block {
+            width: 100%;
+        }
+
+        .input_block input {
+            border-radius: 10px;
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: whitesmoke;
+            border: 1px solid #ccc;
+        }
+
+        .input_block input:focus {
+            outline: none;
+            background-color: white;
+            box-shadow: 0 0 6px #396fdc;
+        }
+
+        .btn {
+            margin-top: 20px;
+            background: linear-gradient(90deg, rgba(73, 64, 255, 1) 0%, rgba(171, 28, 255, 1) 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            width: 100%;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: box-shadow 0.2s, background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 6px #396fdc;
+            background: orangered;
+        }
+
+        .forgot_password {
+            width: 100%;
+            text-align: right;
+
+            a {
+                color: #666;
+            }
+        }
+
+        .forgot_password a:hover {
+            color: orangered;
+        }
+
+        .already {
+            margin-top: 12px;
+            color: #666;
+
+            a {
+                color: orangered;
+            }
+        }
+
+        .login_social_account {
+            margin-top: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                transition: transform 0.2s, background-color 0.2s ease;
+            }
+        }
+
+        .login_social_account img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .back {
+            color: black;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 83px;
+            left: 650px;
+            transition: transform 0.2s, color 0.1s ease;
+        }
+        .back:hover {
+            color: orangered;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+<div class="login_container">
+    <a href="advanture.html"><i class="back" data-lucide="arrow-left"></i></a>
+    <img src="https://img.icons8.com/?size=100&id=44517&format=png&color=000000" alt="">
+    <h1>Welcome Back</h1>
+    <p>Please Sign In Or Register</p>
+    <div class="input_block">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter Username">
+    </div>
+    <div class="input_block">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter Password">
+    </div>
+    <div class="forgot_password">
+        <a href="">Forgot password?</a>
+    </div>
+    <p style="margin-top: 10px">Or login with</p>
+    <div class="login_social_account">
+        <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">
+        <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
+        <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="">
+    </div>
+    <button class="btn" style="display: flex; align-items: center; justify-content: center;gap: 10px;">
+        <img style="width: 35px;height: 35px" src="https://img.icons8.com/?size=100&id=26211&format=png&color=ffffff"
+             alt="">
+        Login
+    </button>
+    <div class="already">
+        Don't have an account? <a href="register.html">Register</a>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>

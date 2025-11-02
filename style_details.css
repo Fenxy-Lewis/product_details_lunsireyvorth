@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    line-height: 1.3;
+}
+body {
+    background-color: #111b28;
+}
+.product_detail_container{
+    position: relative;
+    top: 100px;
+}
+.back{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+.back:hover {
+    color: orangered;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.product_detail {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    background: linear-gradient(90deg, rgba(73, 64, 255, 1) 0%, rgba(171, 28, 255, 1) 100%);
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 30px;
+    justify-items: center;
+    align-items: start;
+}
+.star{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.star_i{
+    display: flex;
+    align-items: center;
+}
+.star_i img{
+    width: 25px;
+    height: 25px;
+}
+.star p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.icon_star{
+    width: 22px;
+    height: 22px;
+margin-right: -5px;
+}
+.pro_img img {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.pro_price{
+    color:greenyellow;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+.pro_info{
+    padding: 10px;
+    margin-top: 30px;
+}
+.pro_desc {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.pro_info h2{
+    font-size: 30px;
+    color:white;
+}
+.qty input{
+    width: 60px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.qty{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.add_qty{
+    width: 35px;
+    height: 35px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+.minus_qty{
+    width: 35px;
+    height: 35px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    width: 60%;
+    background-color:white;
+    border: none;
+    padding: 13px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.btn .add_{
+    background-color:orange;
+    color: white;
+    transition:transform 0.2s,background-color 0.2s ease;
+}
+.order{
+    transition:transform 0.2s,background-color 0.2s ease;
+}
+.add_:hover{
+    background-color: #013434;
+    color: white;
+    transform: scale(1.03);
+}.order:hover{
+    background-color: #013434;
+    color: white;
+    transform: scale(1.03);
+}
